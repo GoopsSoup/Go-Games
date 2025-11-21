@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Game Store</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="prototype">
+      <header class="header">
+        <nav class="nav">
+          <button class="menu-button" aria-label="Open menu">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+          </button>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#high-rating" class="nav-link">High rating</a></li>
+            <li class="nav-item"><a href="#trending" class="nav-link">Trending</a></li>
+            <li class="nav-item"><a href="#popular" class="nav-link">Popular</a></li>
+            <li class="nav-item"><a href="#free-to-play" class="nav-link">Free to play</a></li>
+            <li class="nav-item"><a href="#discount" class="nav-link">Discount</a></li>
+            <li class="nav-item">
+              <button class="nav-link categories-button" aria-expanded="false">
+                Categories
+                <img class="chevron-down" src="img/chevron-down.png" alt="" />
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <label for="search-input" class="visually-hidden">Search games</label>
+          <div class="search-wrapper">
+            <img class="search-icon" src="img/search.png" alt="" />
+            <input type="search" id="search-input" class="search-input" placeholder="Search here..." />
+          </div>
+        </div>
+        <div class="auth-container">
+          <a href="#signin" class="auth-link">Sign In</a>
+          <span class="auth-divider" aria-hidden="true"></span>
+          <a href="#signup" class="auth-link">Sign Up</a>
+          <a href="#profile" class="profile-link" aria-label="User profile">
+            <span class="profile-avatar">
+              <img class="profile-icon" src="img/user.png" alt="" />
+            </span>
+          </a>
+        </div>
+      </header>
+      <main class="main-content">
+        <section class="popular-section" id="popular">
+          <div class="section-header">
+            <h2 class="section-title">Popular</h2>
+            <img class="section-arrow" src="img/arrow-1.svg" alt="" />
+          </div>
+          <div class="featured-games">
+            <article class="featured-game">
+              <img
+                class="featured-game-image"
+                src="img/2098-3840x2160-desktop-4k-uncharted-background-2.png"
+                alt="Uncharted game"
+              />
+              <div class="featured-game-content">
+                <ul class="game-tags">
+                  <li class="game-tag">Adventure</li>
+                  <li class="game-tag">Action-Adventure</li>
+                  <li class="game-tag">Puzzle</li>
+                  <li class="game-tag">...</li>
+                </ul>
+                <p class="game-price">Rp. 499,000</p>
+                <p class="game-description">Play as Nathan Drake and Chloe Frazer in th...</p>
+                <button class="buy-button">Buy Now</button>
+              </div>
+            </article>
+            <article class="featured-game">
+              <img
+                class="featured-game-image"
+                src="img/3eec94a7-cf14-4f1f-8c47-4cf8560231ce.png"
+                alt="Hogwarts Legacy game"
+              />
+              <div class="featured-game-content">
+                <ul class="game-tags">
+                  <li class="game-tag">Magic</li>
+                  <li class="game-tag">Open-World</li>
+                  <li class="game-tag">Fantasy</li>
+                  <li class="game-tag">...</li>
+                </ul>
+                <p class="game-price">Rp. 799,000</p>
+                <p class="game-description">
+                  Hogwarts Legacy is an immersive, open-world action RPG. Now you can ta...
+                </p>
+                <button class="buy-button">Buy Now</button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="popular-games-grid">
+          <article class="game-card">
+            <img class="game-card-image" src="img/wallpaperflare-com-wallpaper.png" alt="The Witcher 3 game" />
+            <div class="game-card-content">
+              <ul class="game-tags">
+                <li class="game-tag">Open-World</li>
+                <li class="game-tag">Rpg</li>
+                <li class="game-tag">Story-Rich</li>
+                <li class="game-tag">...</li>
+              </ul>
+              <p class="game-price">Rp. 359,999</p>
+              <p class="game-description">You are Geralt of Rivia, mercenary monster slayer. Before y...</p>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </article>
+          <article class="game-card">
+            <img class="game-card-image" src="img/wallpaperflare-com-wallpaper-1.png" alt="Dying Light game" />
+            <div class="game-card-content">
+              <ul class="game-tags">
+                <li class="game-tag">Zombie</li>
+                <li class="game-tag">Survival-Horror</li>
+                <li class="game-tag">Horror</li>
+                <li class="game-tag">...</li>
+              </ul>
+              <p class="game-price">Rp. 429,800</p>
+              <p class="game-description">
+                First-person action survival game set in a post-apocalyptic open world ov...
+              </p>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </article>
+        </section>
+        <div class="view-more-container">
+          <a href="#more-popular" class="view-more-button">
+            <span class="view-more-text">View more popular game</span>
+            <img class="view-more-arrow" src="img/arrow-2.svg" alt="" />
+          </a>
+        </div>
+        <section class="recommended-section">
+          <div class="recommended-header">
+            <h2 class="section-title">Recommended for you</h2>
+            <img class="section-arrow" src="img/arrow-3.svg" alt="" />
+          </div>
+          <div class="recommended-games">
+            <article class="recommended-game">
+              <img
+                class="recommended-game-image"
+                src="img/the-last-of-us-part-1-remake-phone-wallpaper-hd-uhdpaper-com-318-1.png"
+                alt="The Last Of Us Part I"
+              />
+              <h3 class="recommended-game-title">The Last Of Us Part I</h3>
+              <p class="recommended-game-price">Rp. 879,000</p>
+            </article>
+            <article class="recommended-game">
+              <img
+                class="recommended-game-image"
+                src="img/helldivers-2-game-phone-wallpaper-hd-uhdpaper-com-922-1.png"
+                alt="Helldivers 2"
+              />
+              <h3 class="recommended-game-title">Helldivers 2</h3>
+              <p class="recommended-game-price">Rp. 579,000</p>
+            </article>
+            <article class="recommended-game">
+              <img
+                class="recommended-game-image"
+                src="img/sifu-game-phone-wallpaper-hd-uhdpaper-com-213-1.png"
+                alt="Sifu"
+              />
+              <h3 class="recommended-game-title">Sifu</h3>
+              <p class="recommended-game-price">Rp. 229,000</p>
+            </article>
+            <article class="recommended-game">
+              <img
+                class="recommended-game-image"
+                src="img/remnant-2-game-phone-wallpaper-hd-uhdpaper-com-634-1.png"
+                alt="Remnant 2"
+              />
+              <h3 class="recommended-game-title">Remnant 2</h3>
+              <p class="recommended-game-price">Rp. 529,999</p>
+            </article>
+          </div>
+        </section>
+        <section class="discount-section" id="discount">
+          <div class="section-header">
+            <h2 class="section-title">Discount</h2>
+            <img class="section-arrow" src="img/arrow-4.svg" alt="" />
+          </div>
+          <div class="discount-games-grid">
+            <article class="discount-game">
+              <img
+                class="discount-game-image"
+                src="img/resident-evil-requiem-grace-ashcroft-2k-wallpaper-uhdpaper-com-338-5.png"
+                alt="Resident Evil game"
+              />
+              <div class="discount-game-content">
+                <p class="discount-game-price-original">Rp. 910,000</p>
+                <p class="discount-game-price">Rp. 720,000</p>
+                <button class="buy-button">Buy Now</button>
+              </div>
+            </article>
+            <article class="discount-game">
+              <img
+                class="discount-game-image"
+                src="img/ghost-of-yotei-2k-wallpaper-uhdpaper-com-826-2.png"
+                alt="Ghost of Yotei game"
+              />
+              <div class="discount-game-content">
+                <p class="discount-game-price-original">Rp. 1.029,000</p>
+                <p class="discount-game-price">Rp. 820,999</p>
+                <button class="buy-button">Buy Now</button>
+              </div>
+            </article>
+            <article class="discount-game">
+              <img
+                class="discount-game-image"
+                src="img/lies-of-p-overture-2k-wallpaper-uhdpaper-com-93-5.png"
+                alt="Lies of P game"
+              />
+              <div class="discount-game-content">
+                <p class="discount-game-price-original">Rp. 870,000</p>
+                <p class="discount-game-price">Rp. 770,000</p>
+                <button class="buy-button">Buy Now</button>
+              </div>
+            </article>
+            <article class="discount-game">
+              <img
+                class="discount-game-image"
+                src="img/assassins-creed-shadows-game-naoe-yasuke-2k-wallpaper-uhdpaper-com-34-5.png"
+                alt="Assassins Creed Shadows game"
+              />
+              <div class="discount-game-content">
+                <p class="discount-game-price-original">Rp. 799,000</p>
+                <p class="discount-game-price">Rp. 520,699</p>
+                <button class="buy-button">Buy Now</button>
+              </div>
+            </article>
+            <article class="discount-game">
+              <img
+                class="discount-game-image"
+                src="img/elden-ring-nightreign-game-2k-wallpaper-uhdpaper-com-310-5.png"
+                alt="Elden Ring game"
+              />
+              <div class="discount-game-content">
+                <p class="discount-game-price-original">Rp. 399,000</p>
+                <p class="discount-game-price">Rp. 299,000</p>
+                <button class="buy-button">Buy Now</button>
+              </div>
+            </article>
+            <article class="discount-game">
+              <img
+                class="discount-game-image"
+                src="img/gears-of-war-reloaded-2k-wallpaper-uhdpaper-com-108-5.png"
+                alt="Gears of War game"
+              />
+              <div class="discount-game-content">
+                <p class="discount-game-price-original">Rp. 579,000</p>
+                <p class="discount-game-price">Rp. 320,999</p>
+                <button class="buy-button">Buy Now</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="footer-text">Reference: Steam-Epic Games</p>
+          <div class="footer-logo">
+            <img class="footer-logo-image" src="img/g-1-removebg-preview-3.png" alt="Logo" />
+            <div class="footer-decoration-1"></div>
+            <div class="footer-decoration-2"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
